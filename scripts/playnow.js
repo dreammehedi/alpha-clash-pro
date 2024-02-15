@@ -24,6 +24,8 @@ function whatKeyPressedUser(event) {
   if (pressKbd === "Escape") {
     hide("play-ground");
     show("score-screen");
+    const finalScoreValue = document.getElementById("score-up").innerText;
+    setFinalScore("final-score-value", finalScoreValue);
   }
   // finde current alphabate
   const currentAlphabetId = document.querySelector("#current-alphabet");
